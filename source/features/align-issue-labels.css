@@ -1,5 +1,8 @@
 html:not([rgh-OFF-align-issue-labels]) {
 	div[class^='IssueRow-module__row'],
+	li[class^='ListItem-module__listItem']:has(
+		[data-testid='issue-listitem-title-link']
+	),
 	div[class^='PullRequestRow-module__row'],
 	li[class*='PullsListItem']:not([class*='compact']) {
 		div[class^='Title-module__container'] {
